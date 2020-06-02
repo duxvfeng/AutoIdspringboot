@@ -1,7 +1,7 @@
 #DataSource
 spring:
   datasource:
-    username: shjjfsc
-    password: gtmsDb34#$
-    url: jdbc:mysql://49.235.113.73:3306/shanghaojia?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/pro?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.jdbc.Driver
