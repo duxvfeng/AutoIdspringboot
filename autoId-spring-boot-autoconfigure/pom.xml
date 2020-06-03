@@ -3,13 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>AutoId-spring-boot</artifactId>
+        <artifactId>autoId-spring-boot</artifactId>
         <groupId>com.github.autoId</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>autoId-spring-boot-autoconfigure</artifactId>
+    <version>1.0.0</version>
 
     <dependencies>
         <!-- Compile dependencies -->
@@ -21,20 +22,16 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.github.autoId</groupId>
             <artifactId>autoId</artifactId>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-autoconfigure</artifactId>
-            <optional>true</optional>
         </dependency>
-   
-    </dependencies>
 
+    </dependencies>
 
 </project>
