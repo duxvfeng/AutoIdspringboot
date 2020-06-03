@@ -5,14 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.autoId</groupId>
-    <artifactId>AutoId-spring-boot</artifactId>
+    <artifactId>autoId-spring-boot</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+
     <modules>
         <module>autoId-spring-boot-autoconfigure</module>
         <module>autoId-spring-boot-starter</module>
-        <module>autoId-spring-boot-samples</module>
     </modules>
-    <packaging>pom</packaging>
+
 
     <properties>
         <mybatis.version>3.5.3</mybatis.version>
@@ -49,6 +51,7 @@
                 <groupId>com.github.autoId</groupId>
                 <artifactId>autoId</artifactId>
                 <version>${project.version}</version>
+                <optional>false</optional>
             </dependency>
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
@@ -67,14 +70,28 @@
 
     <build>
         <plugins>
+            <!--Compiler-->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
+                <inherited>true</inherited>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <!-- Source -->
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
