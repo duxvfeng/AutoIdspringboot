@@ -17,7 +17,7 @@
 
 
     <properties>
-        <mybatis.version>3.5.3</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <autoId.version>1.0.0</autoId.version>
         <mybatis-spring-boot.version>2.1.1</mybatis-spring-boot.version>
         <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
